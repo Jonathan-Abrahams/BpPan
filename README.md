@@ -21,4 +21,10 @@ In this way a rigorous quality control method was applied.
 
 ### How many in core and accessory genome?
 
-To determine
+This cna be read directly from the summary stats file
+
+### How many genes have been disrupted vs deleted?
+
+Using the script 'Blast script denovo assemblies.R' it can be determined which genes from the pangenome have been deleted (no AA or DNA homology) or disrupted (high DNA and low AA). This requires some pre processing.
+
+We need to generate a single fasta file containing all the assemblies and their contigs, with each seq having a unique name. This is done using the rename_and_merge_fastas.R file.
